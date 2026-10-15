@@ -64,6 +64,12 @@ function blob_fixup() {
         vendor/bin/hw/hostapd)
             "${PATCHELF}" --add-needed "libcompiler_rt-v29.so" "${2}"
             ;;
+        vendor/bin/hw/android.hardware.neuralnetworks@1.1-service-gpunn)
+            "${PATCHELF}" --add-needed "libcompiler_rt-v29.so" "${2}"
+            ;;
+        vendor/bin/hw/android.hardware.neuralnetworks@1.1-service-apunn)
+            "${PATCHELF}" --add-needed "libcompiler_rt-v29.so" "${2}"
+            ;;
         vendor/lib*/libnvram.so)
             "${PATCHELF}" --add-needed "libshim_nvram.so" "${2}"
             ;;
@@ -71,6 +77,9 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v28.so" "${2}"
             ;;
         vendor/lib/libMtkOmxVdecEx.so)
+            "${PATCHELF}" --add-needed "libshim_omx.so" "${2}"
+            ;;
+        vendor/lib/libMtkOmxVenc.so)
             "${PATCHELF}" --add-needed "libshim_omx.so" "${2}"
             ;;
         vendor/lib/hw/audio.primary.mt8183.so)
@@ -82,6 +91,9 @@ function blob_fixup() {
             ;;
         vendor/lib/hw/fireos.hardware.audio@4.0-impl.so)
             "${PATCHELF}" --replace-needed "android.hardware.audio.common@4.0-util.so" "android.hardware.audio.common@4.0-util-v28.so" "${2}"
+            ;;
+        vendor/lib/libtensorflowlite_c.so)
+            "${PATCHELF}" --add-needed "libcompiler_rt-v29.so" "${2}"
             ;;
     esac
 }

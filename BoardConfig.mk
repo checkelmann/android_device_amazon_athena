@@ -8,15 +8,25 @@ DEVICE_PATH := device/amazon/athena
 
 BUILD_BROKEN_DUP_RULES := true
 
-# Architecture — 32-bit ARM (matches athena's stock kernel 4.4.x boot path)
-# The MT8183 SoC is 64-bit capable but athena's LK only boots 32-bit currently.
-# Future optimization: switch to arm64 once the 64-bit LK patch is in place.
-TARGET_ARCH := arm
-TARGET_ARCH_VARIANT := armv7-a-neon
-TARGET_CPU_ABI := armeabi-v7a
-TARGET_CPU_ABI2 := armeabi
-TARGET_CPU_VARIANT := cortex-a53
-TARGET_CPU_VARIANT_RUNTIME := cortex-a53
+# Architecture — 64-bit ARM kernel with 32-bit userspace (CONFIG_COMPAT=y).
+# The MT8183 kernel source (amazon-mt8183-devs) only supports arch/arm64/.
+# Stock athena runs a 32-bit kernel but Amazon's GPL release is 64-bit only.
+# The bootopt=64S3,32S1,32S1 cmdline in athena's stock boot image tells LK
+# to try 64-bit first, so a 64-bit Image.gz-dtb is the correct target.
+# athena_defconfig will set CONFIG_COMPAT=y so 32-bit userspace works.
+TARGET_ARCH := arm64
+TARGET_ARCH_VARIANT := armv8-a
+TARGET_CPU_ABI := arm64-v8a
+TARGET_CPU_ABI2 :=
+TARGET_CPU_VARIANT := generic
+TARGET_CPU_VARIANT_RUNTIME := cortex-a73
+
+TARGET_2ND_ARCH := arm
+TARGET_2ND_ARCH_VARIANT := armv7-a-neon
+TARGET_2ND_CPU_ABI := armeabi-v7a
+TARGET_2ND_CPU_ABI2 := armeabi
+TARGET_2ND_CPU_VARIANT := cortex-a53
+TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := athena
@@ -52,13 +62,14 @@ TARGET_SCREEN_DENSITY := 160
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
-# Kernel — 32-bit, gcc cross-compile (Clang with arm 32-bit has known issues on 4.4)
-TARGET_KERNEL_ARCH := arm
-TARGET_KERNEL_HEADER_ARCH := arm
+# Kernel — 64-bit ARM, Clang (matches maverick build flags)
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/amazon/mt8183
 TARGET_KERNEL_CONFIG := athena_defconfig
-TARGET_KERNEL_CLANG_COMPILE := false
-BOARD_KERNEL_IMAGE_NAME := zImage-dtb
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := r450784d
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 
 # Partitions — sizes from /proc/partitions on the live device
 # mmcblk1p20 = 16384 blocks = 16MB boot

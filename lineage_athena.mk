@@ -5,9 +5,9 @@
 #
 
 # Inherit from those products. Most specific first.
-# 32-bit base (athena runs a 32-bit kernel/userspace to match stock).
-# Future: switch to core_64_bit.mk when the 64-bit LK patch lands.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_32_bit.mk)
+# 64-bit kernel with 32-bit userspace (CONFIG_COMPAT=y in the kernel defconfig).
+# core_64_bit.mk gives us 64-bit base; athena userspace stays armeabi-v7a.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 # Inherit from device makefile.
