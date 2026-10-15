@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=maverick
+DEVICE=athena
 VENDOR=amazon
 
 # Load extract_utils and do some sanity checks

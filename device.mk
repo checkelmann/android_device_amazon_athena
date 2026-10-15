@@ -65,7 +65,7 @@ PRODUCT_PACKAGES += \
 
 # DT2W
 PRODUCT_PACKAGES += \
-    DT2W-Service-Maverick
+    DT2W-Service-Athena
 
 # Graphics
 PRODUCT_PACKAGES += \
@@ -98,7 +98,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.maverick
+    android.hardware.light-service.athena
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -205,4 +205,4 @@ PRODUCT_PACKAGES += \
     libcompiler_rt-v29
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/amazon/maverick/maverick-vendor.mk)
+$(call inherit-product, vendor/amazon/athena/athena-vendor.mk)

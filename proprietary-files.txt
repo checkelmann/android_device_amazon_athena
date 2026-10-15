@@ -4,7 +4,7 @@
 vendor/lib/libamazonlog.so
 vendor/lib64/libamazonlog.so
 
-# Audio - from maverick-user 9 PS7312 1271 amz-p,release-keys
+# Audio - from athena-user 9 PS7312 1271 amz-p,release-keys
 vendor/bin/atcid|5d4d03c9c92ef1ac92c6da65ed845b2c50bc17f1
 vendor/bin/audiocmdservice_atci|f86d9c17573b836b57ddb242cb1b6eb898a3afae
 vendor/bin/hw/fireos.hardware.audio@2.0-service|5cb39c68e3d58bc2a6faa1d9e56891f05fb0cb03
@@ -51,7 +51,7 @@ vendor/lib/libspeech_enh_lib.so|b8c98a72fd2eb7ddeecabe79944b3a1a4f11d706
 vendor/lib/libspeechparser_vendor.so|ed700d1453a3e3091e4de9d59cfb946c370b3534
 vendor/lib/vendor.mediatek.hardware.atci@1.0.so|25973cf81a8716b8f5e7490abe754fa99d83820c
 
-# Audio Configs - from maverick-user 9 PS7312 1271 amz-p,release-keys
+# Audio Configs - from athena-user 9 PS7312 1271 amz-p,release-keys
 vendor/etc/audio-algorithms/AFE.cfg|0123b2a0da97f8204ebabf78391198ef27eae8f4
 vendor/etc/audio-algorithms/coefs_FilterBank.cfg|a28c17c34c427d40cef3b83692d1151ad81b322d
 vendor/etc/audio_param/AudioParamOptions.xml|395d22eebdd3862b7457ff897fca44baaf51473e
@@ -174,7 +174,7 @@ vendor/etc/init/init.bt_drv.rc
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-mediatek.so
 
-# Camera (Dependencies) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+# Camera (Dependencies) - from athena-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/lib/gc02m1_mipi_raw_IdxMgr.so|494c9a50166169fe7da24569d79a148eefba1b48
 vendor/lib/gc02m1_mipi_raw_tuning.so|2d49e14dcd9828bf250e4feca41d614f3d2736dc
 vendor/lib/gc02m1front_mipi_raw_IdxMgr.so|31e81446fb05ef555c58e0c2b9825111e87c2890
@@ -468,17 +468,17 @@ vendor/lib/libmtkcam_tsf.so|2896e184fea2093662deab4e0887f4e77d4cce77
 vendor/lib/libmtkcam_tuning_utils.so|702582139d76dc3bf0d123dd76285f5a0029f07d
 vendor/lib/libmtkcutils.so|2cf9be489c778742dcd68f53275b01d7f0263f41
 
-# Camera (Interfaces) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+# Camera (Interfaces) - from athena-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/lib/vendor.mediatek.hardware.camera.ccap@1.0.so|87f654ee87cf887ea4b0d05da8a9b8b0f1a1685e
 vendor/lib/vendor.mediatek.hardware.camera.lomoeffect@1.0.so|d0be7ab7f408e39ec5e88e67432dccd134a8d118
 
-# Camera (Service/Impl) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+# Camera (Service/Impl) - from athena-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/bin/hw/camerahalserver|c4ac4f72fc41565b8762764f6b63706fdf43f2e5
 vendor/bin/mtkcam-debug|714c8c568cb8bbaa88a5a933fe52c1a0b4db5be2
 vendor/etc/init/camerahalserver.rc|88ddae216909ebfe05b56e504ff8f05e45542dba
 vendor/lib/hw/android.hardware.camera.provider@2.4-impl-mediatek.so|7b2d4a348f09d1d1202b22081b56352456180375
 
-# CCCI - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+# CCCI - from athena-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/bin/ccci_fsd|07413058bbd9e2c0c80e0bbf9579f11f0cba528f
 vendor/bin/ccci_rpcd|d1745d52525326795b650d8274f4843b41ebea97
 vendor/etc/init/init.cccifsd.rc|ada27f6450c2d3fb6e178a62ec1a6eada64b811f
@@ -486,7 +486,7 @@ vendor/etc/init/init.cccirpcd.rc|007d95a9cfe9f8e596b2e25690e12a82d0f8753f
 vendor/lib/libccci_util.so|5ed55752e09c53ec6d5dd3189e1619442316c165
 vendor/lib/libstorage_otp.so|715766171facd7da0f3182ce49b1a292081296d9
 
-# DHA (Binaries) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+# DHA (Binaries) - from athena-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/bin/amzn_dha_hmac|3780af07cba3a10c8ee954faad359c7f65f81ea2
 vendor/bin/amzn_dha_tool|e0b7fda430cd2f5361ceafb2e80d2d9a19cbfe50
 vendor/bin/amzn_drmprov_check|db013043470e5c9a186a8db376eb153fc14d9d38
@@ -507,11 +507,11 @@ vendor/etc/init/fireos.hardware.fireosdha@2.0-service.rc
 vendor/lib/hw/fireos.hardware.fireosdha@2.0-impl.so
 vendor/lib64/hw/fireos.hardware.fireosdha@2.0-impl.so
 
-# DRM (Binaries) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+# DRM (Binaries) - from athena-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/bin/pr_device_cert_id|049ae3daed4212d6bfed70161b23c575ab883c8c
 vendor/etc/init/pr_device_cert_id.rc|df5b6b071a80dbfb370062f6de181662541dbe3e
 
-# DRM (Crypto) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+# DRM (Crypto) - from athena-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/lib/liboemcrypto.so|08f369ed67141f05a998d78da205b4ec804500f8
 vendor/lib/libplayready.so|6483ecb1b43fa9521b92cc20150c4a2939f896ae
 vendor/lib/libwvhidl.so|d6b7fcd669049b39f9b0fc2eb5497260938658a4
@@ -527,11 +527,11 @@ vendor/lib64/lib_uree_mtk_video_secure_al.so
 vendor/lib64/libtz_uree.so
 vendor/lib64/liburee_meta_drmkeyinstall_v2.so
 
-# DRM (Service/Impl) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+# DRM (Service/Impl) - from athena-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/bin/hw/android.hardware.drm@1.1-service.widevine|b3bc73f366adedc8bfb3204548da1e3def9385de
 vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc|5a01d337c1d375ee24a6c8992ba91f54afb7637e
 
-# Firmware - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+# Firmware - from athena-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/bin/lib3a.ccu.ddr|65c066d8802a784449935367f76835a071b85faa
 vendor/bin/lib3a.ccu.dm|67a12942616ff5baced4770430c3cba6457ec121
 vendor/bin/lib3a.ccu.pm|06b94ad55a6222badb7c45ed9d63a9a789140645
@@ -599,7 +599,7 @@ vendor/lib64/hw/gralloc.mt8183.so
 vendor/lib64/hw/hwcomposer.mt8183.so
 vendor/lib64/hw/memtrack.mt8183.so
 
-# Health - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+# Health - from athena-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/bin/fuelgauged_nvram|7c22b90b85b5a7ace58ed01da0fa0eac45c21f37
 vendor/bin/fuelgauged|3202a2096f92ac8192f6d02a63b3158b47dbe714
 vendor/etc/init/fuelgauged_init.rc|059d27cf33a84a559d45597be9f1f700dbb0d947
@@ -690,10 +690,10 @@ vendor/lib64/libvcodec_oal.so
 vendor/lib64/libvcodec_utility.so
 vendor/lib64/libvpu.so
 
-# Media (VPU) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+# Media (VPU) - from athena-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/lib/libvpu.so|244819e69588079eead10647f9174a8b56318883
 
-# NVRAM (Binaries) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+# NVRAM (Binaries) - from athena-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/bin/nvram_daemon|4cf13037bba14332401aca95adff8511cfc807c4
 vendor/etc/init/nvram_daemon.rc|c55547dfa6656c7d89788036331f074c52701ab1
 
@@ -713,7 +713,7 @@ vendor/lib64/libnvram_platform.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 
-# NVRAM (Interfaces) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+# NVRAM (Interfaces) - from athena-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/lib/vendor.mediatek.hardware.nvram@1.0.so|0da32312c34ea51621ed8691dd71c46de4af02c5
 vendor/lib/vendor.mediatek.hardware.nvram@1.1.so|80e812bae4c6409fceb258eb83784968fe5a4c8f
 
@@ -740,7 +740,7 @@ vendor/lib64/libpowerhalwrap_vendor.so
 vendor/lib64/vendor.mediatek.hardware.power@1.1.so
 vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 
-# Perf - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+# Perf - from athena-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/lib/vendor.mediatek.hardware.power@1.1.so|6bd29287a4b9978c06962a052a53b59f4c46fd80
 vendor/lib/vendor.mediatek.hardware.power@2.0.so|740fbd46f01ead01029ed43447145359507d7b33
 
@@ -766,28 +766,28 @@ vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
 vendor/lib/hw/vendor.mediatek.hardware.pq@2.2-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.pq@2.2-impl.so
 
-# RPMB - from maverick-user 9 PS7312 1271 amz-p,release-keys
+# RPMB - from athena-user 9 PS7312 1271 amz-p,release-keys
 vendor/bin/rpmb_svc|0c84036cc312786c1b4cb7b26ce56c4ed33fff94
 vendor/etc/init/rpmb_svc.rc|80c283b558ea8c04edcb70313a63f33d86d81208
 
-# Sensors (Dependencies) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+# Sensors (Dependencies) - from athena-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/lib/libksensor.so|47656cdd7a504b08e1683f19a618dfca753d9da0
 
-# Sensors (HW Module) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+# Sensors (HW Module) - from athena-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/lib/hw/sensors.mt8183.so|73abb7e8fa9380a182c546f17f22199344935ecc
 
-# Sensors (Service/Impl) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+# Sensors (Service/Impl) - from athena-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/bin/hw/android.hardware.sensors@1.0-service-mediatek|7cf812fed16d0a601e1d131b0f5f054670f67fcc
 vendor/etc/init/android.hardware.sensors@1.0-service-mediatek.rc|cd20534ade7e34ce6e4b6bbcbc47d35307ff4b44
 vendor/lib/hw/android.hardware.sensors@1.0-impl-mediatek.so|e1d781e5b5e49d79643dbff5738cf5b836b23d5e
 
-# Thermal (Binaries) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+# Thermal (Binaries) - from athena-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/bin/thermalloadalgod|e8a488fdf9ed968fe38ac09230b45be484160526
 vendor/bin/thermal|ddb4a4a4c4cd9285770b4587517e70490f9b16e3
 vendor/etc/init/init.thermal.rc|cb4f259f720f2481a3e9b4d68d7c72193c554faa
 vendor/etc/init/init.thermalloadalgod.rc|d70cde3b8a1a1607f7a99475b3357a894907458f
 
-# Thermal (Configs) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+# Thermal (Configs) - from athena-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/etc/.tp/.ht120.mtc|d39126f3269a5f3b05a131d7d7e622aeb6dc7e32
 vendor/etc/.tp/.thermal_policy_00|e2c066ccca622005334999bdcc32259c98fcced0
 vendor/etc/.tp/.thermal_policy_03|0d1e104ce2132796658c0a546fb1b5cce6eef43d
@@ -799,17 +799,17 @@ vendor/etc/.tp/thermal.policy.conf|4be70ac835275368cf5c31061cb3d172d89d72d8
 vendor/etc/fstb.cfg|4a20067fd57bd603da7d2c1eccae0878f1404ab9
 vendor/etc/fteh.cfg|5e014342f0c9ac3d65ffb6e063b6484f3afff336
 
-# Thermal (Dependencies) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+# Thermal (Dependencies) - from athena-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/lib/libifcutils_mtk.so|bf2068aeffcdae1cd937d6490d0e8bcaa4ed1354
 vendor/lib/libthermalalgo.so|e6f6d9e8bfab5d89a56ac059b9f849950db8dd4f
 
-# Thermal (HW Module) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+# Thermal (HW Module) - from athena-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/lib/hw/thermal.mt8183.so|76310546f02d52d31de5ea59c96e0b4926b3b592
 
-# Thermal (Interfaces) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+# Thermal (Interfaces) - from athena-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/lib/fireos.hardware.amazonthermal@1.0.so|6172520908693821388ddc310ddbb3621e01467c
 
-# Thermal (Service/Impl) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+# Thermal (Service/Impl) - from athena-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/bin/hw/fireos.hardware.amazonthermal@1.0-service|f6ce9a6c575d1a37d9261143a99532f652a9109d
 vendor/etc/init/fireos.hardware.amazonthermal@1.0-service.rc|c9a37740c9e051ed66c3deb4cc9ac2cf55ff3f9f
 vendor/lib/hw/fireos.hardware.amazonthermal@1.0-impl.so|7ba19313dce88faede66dbdca257f0d5af91b68e
@@ -838,7 +838,7 @@ vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.1.so|4af9d9e28dac45043c1
 vendor/etc/init/init.wlan_drv.rc
 vendor/etc/init/init_connectivity.rc
 
-# Wi-Fi (Kernel Modules) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+# Wi-Fi (Kernel Modules) - from athena-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/lib/modules/bt_drv.ko|c78b885629f0c4e43428e85efc9b6c1fe085f443
 vendor/lib/modules/wlan_drv_gen3.ko|8ae5725d31865dc2cbcf7b07afa20b3b3b9cda1f
 vendor/lib/modules/wmt_chrdev_wifi.ko|a801bbae8af875a7947acf19aa1b925e27aa8dfa

@@ -16,7 +16,7 @@
  */
 
 android_app {
-    name: "DT2W-Service-Maverick",
+    name: "DT2W-Service-Athena",
 
     srcs: ["src/**/*.java"],
     resource_dirs: ["res"],
@@ -30,13 +30,13 @@ android_app {
     },
 
     required: [
-        "privapp-permissions_org.lineageos.dt2w.maverick"
+        "privapp-permissions_org.lineageos.dt2w.athena"
     ]
 }
 
 prebuilt_etc {
-    name: "privapp-permissions_org.lineageos.dt2w.maverick",
+    name: "privapp-permissions_org.lineageos.dt2w.athena",
     sub_dir: "permissions",
-    src: "privapp-permissions_org.lineageos.dt2w.maverick.xml",
+    src: "privapp-permissions_org.lineageos.dt2w.athena.xml",
     filename_from_src: true,
 }

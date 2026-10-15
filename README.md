@@ -1,4 +1,4 @@
-# Android Device tree for Amazon Fire HD 10 (9th generation)
+# Android Device tree for Amazon Echo Show 8 (2nd Gen) (9th generation)
 
 ```
 #

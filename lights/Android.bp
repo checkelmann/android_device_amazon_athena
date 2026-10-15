@@ -14,9 +14,9 @@
 // limitations under the License.
 
 cc_binary {
-    name: "android.hardware.light-service.maverick",
-    init_rc: ["android.hardware.light-service.maverick.rc"],
-    vintf_fragments: ["android.hardware.light-service.maverick.xml"],
+    name: "android.hardware.light-service.athena",
+    init_rc: ["android.hardware.light-service.athena.rc"],
+    vintf_fragments: ["android.hardware.light-service.athena.xml"],
     relative_install_path: "hw",
     srcs: [
         "main.cpp",
